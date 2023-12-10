@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
 
-body {
+  body {
     font-size: 16px;
     width: 70%;
     margin-top: 5%;
     margin-left: 20%;
     background-image: url('fundo.jpg');
     background-size: cover;
-    
-    
-}
+  }
 
-h1, h2, h3,h4,p {
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
     font-family: 'Rethink Sans', sans-serif;
     text-align: center;
     color: #f3dbf3;
-}
+  }
 
-h4, p{
-  color: white;
-}
+  h4,
+  p {
+    color: white;
+  }
 
-.sticky {
+  .sticky {
     flex-wrap: wrap;
     display: inline-block;
     width: 200px;
@@ -30,38 +33,36 @@ h4, p{
     padding: 10px;
     transition: transform 0.3s ease-in-out;
     color: white;
-}
+  }
 
-.sticky:hover {
+  .sticky:hover {
     transform: scale(1.1);
-}
+  }
 
-
- .botao-concluir {
+  .botao-concluir {
     padding: 5px;
     border: none;
     color: #fff;
     cursor: pointer;
-    border-radius: 20px; 
+    border-radius: 20px;
     background-color: #27ae60;
     width: 100%;
-}
+  }
 
-
-#Formulario {
+  #Formulario {
     width: 30%;
-}
+  }
 
-label {
+  label {
     font-family: 'Rethink Sans', sans-serif;
-}
+  }
 
-.input {
+  .input {
     position: relative;
     margin-bottom: 25px;
-}
+  }
 
-.input input {
+  .input input {
     width: 100%;
     border: 0;
     border-bottom: 2px solid #c5c5c54f;
@@ -71,13 +72,13 @@ label {
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
-}
+  }
 
-.input input::placeholder {
+  .input input::placeholder {
     color: transparent;
-}
+  }
 
-.input label {
+  .input label {
     position: absolute;
     top: 0;
     display: block;
@@ -85,25 +86,25 @@ label {
     font-size: 16px;
     color: #ffffff;
     pointer-events: none;
-}
+  }
 
-.input input:required:invalid + label {
+  .input input:required:invalid+label {
     color: #d3d3d3;
-}
+  }
 
-.input input:focus,
-.input input:valid {
+  .input input:focus,
+  .input input:valid {
     border-bottom: 2px solid #f3dbf3;
-}
+  }
 
-.input input:focus + label,
-.input input:valid + label {
+  .input input:focus+label,
+  .input input:valid+label {
     font-size: 14px;
     color: #f3dbf3;
     transform: translateY(-30px);
-}
+  }
 
-.botao {
+  .botao {
     font-family: 'Rethink Sans', sans-serif;
     display: inline-block;
     font-weight: 500;
@@ -115,9 +116,9 @@ label {
     position: relative;
     background-color: transparent;
     overflow: hidden;
-}
+  }
 
-.botao::before {
+  .botao::before {
     font-family: 'Rethink Sans', sans-serif;
     content: "";
     position: absolute;
@@ -129,9 +130,34 @@ label {
     transform: translateX(-100%);
     transition: all .3s;
     z-index: -1;
-}
+  }
 
-.botao:hover::before {
+  .botao:hover::before {
     font-family: 'Rethink Sans', sans-serif;
     transform: translateX(0);
-}
+  }
+
+
+  .botao-remover,
+  .botao-editar {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .botao-remover {
+    background-color: #e74c3c;
+  }
+
+  .botao-editar {
+    background-color: #3498db;
+  }
+
+
+  
+  
